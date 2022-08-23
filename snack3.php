@@ -15,16 +15,13 @@
     $arrayRandomNumbers= [];
 
 do{
-
-
     array_push($arrayRandomNumbers, random_int(0, 15));
     array_unique($arrayRandomNumbers);
-
 }
-while(count($arrayRandomNumbers)>14);
+while(count($arrayRandomNumbers)< 14);
 
 for ($i=0; $i < count($arrayRandomNumbers);$i++){
-    echo $arrayRandomNumbers[$i];
+    echo $arrayRandomNumbers[$i] . " ";
 }
 
     
