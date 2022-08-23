@@ -10,13 +10,39 @@
     <?php 
     
     $tappa1 = [
-        'teamHome' => 'Milan',
-        'teamAway' => 'Inter',
-        'resultHome' => '87',
-        'resultAway' => '86',
+        [
+            'teamHome' => 'Milan',
+            'teamAway' => 'Inter',
+            'resultHome' => '87',
+            'resultAway' => '86',
+        ],
+        [
+            'teamHome' => 'Milan',
+            'teamAway' => 'Inter',
+            'resultHome' => '87',
+            'resultAway' => '86',
+        ],
+        [
+            'teamHome' => 'Milan',
+            'teamAway' => 'Inter',
+            'resultHome' => '87',
+            'resultAway' => '86',
+        ]
     ];
     
-    echo $tappa1['teamHome'] . " - " . $tappa1['teamAway'] . " | " . $tappa1['resultHome'] . " - " . $tappa1['resultAway'];
+    for ($i=0;$i < count($tappa1);$i++)
+    {
+        ?>
+        <h4>
+            <?php 
+            echo $tappa1[$i]['teamHome'] . " - " . $tappa1[$i]['teamAway'] . " | " . $tappa1[$i]['resultHome'] . " - " . $tappa1[$i]['resultAway'];
+            ?>
+
+        </h4>
+        
+    <?php
+    }
+
     
     
     ?>
