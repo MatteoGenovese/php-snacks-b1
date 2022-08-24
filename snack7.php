@@ -17,26 +17,26 @@
             'nome' => 'luca',
             'cognome' => 'lucherrimo',
             'voti' => [
-                [10],
-                [9],
-                [10],
-                [9],
+                10,
+                9,
+                10,
+                9,
             ],
         ],
         [
             'nome' => 'marco',
             'cognome' => 'marcherrimo',
             'voti' => [
-                [9],
-                [8],
-                [9],
+                9,
+                8,
+                9,
             ],
         ],
         [
             'nome' => 'enzo',
             'cognome' => 'enzerrimo',
             'voti' => [
-                [7],
+                7,
             ],
         ],
     ];
@@ -48,6 +48,7 @@
             $media += $alunni[$i]['voti'][$j];
         }
         $media = $media / count($alunni[$i]['voti']);
+        var_dump($alunni[$i]);
         ?>
         <h4>
             <?php 
